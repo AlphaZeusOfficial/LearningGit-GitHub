@@ -19,9 +19,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
-    overflow: hidden;
+    padding-top: 2rem; /* Espacio extra en la parte superior */
+    overflow: auto; /* Habilita el desplazamiento */
     position: relative;
     transition: background 2s;
 }
