@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 @keyframes glowing {
     0%, 100% {
         text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 15px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
@@ -8,10 +10,11 @@
         transform: scale(1.05);
     }
 }
+
 body {
     background: radial-gradient(circle, #000, #000 70%, #004d00 100%);
     color: #0f0;
-    font-family: 'Courier New', monospace;
+    font-family: 'Orbitron', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,10 +49,10 @@ h1 {
     -webkit-text-stroke: 2px black;
     transform: perspective(300px) rotateX(10deg);
     letter-spacing: 10px;
-    background-image: linear-gradient(45deg, rgba(0, 255, 0, 0.1), rgba(0, 0, 0, 0.1));
-    background-clip: text;
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.1), rgba(0, 0, 0, 0.1));
     -webkit-background-clip: text;
-    color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 2px #0f0);
 }
 
@@ -64,4 +67,5 @@ p {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     box-shadow: 0 0 10px #0f0;
+    backdrop-filter: blur(5px);
 }
